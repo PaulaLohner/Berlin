@@ -14,5 +14,5 @@ The gifs below show the app functionality, if you would like to test it yourself
 #### Map clusters: <br>
 ![map-clusters-demonstration](https://github.com/PaulaLohner/berlin/blob/main/berlin2.gif) <br><br>
 
-### Suggestions box: <br>
+#### Suggestions box: <br>
 ![suggestions-page](https://github.com/PaulaLohner/berlin/blob/main/berlin3.gif)
