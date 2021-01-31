@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    z-index: 20;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-page {
+    display: flex;
+    align-items: center;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.logo-page img {
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.menu {
+    margin-right: 20px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    position: absolute;
+    z-index: 25;
+    right: 20px;
+    top: 10px;
+    background-color: white;
+    padding: 5px;
+    margin: 0;
+}
+
+.menu-title {
+    text-align: end;
+}
+
+.menu-list {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.about-page {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.suggestions {
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.suggestions-text {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.all-fields {
+    font-size: 13px;
+}
+
+.suggestions-container {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    text-align: left;
+    height: 150px;
+    width: 150p;
+    overflow-y: scroll;
+    margin-left: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    display: block;
+}
+
+textarea {
+    margin: 0px;
+    height: 103px;
+    width: 170px;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(136, 136, 136, 0.5);
+    z-index: 10;
+
+    animation: slideFromRight;
+    animation-duration: 0.5s;
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.modal-content {
+    position: relative;
+    width: 40%;
+    background-color: #f7f7ee;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-content img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.modal-content h2 {
+    font-family: "Fjalla One", sans-serif;
+}
+
+.modal-content p {
+    font-family: "Roboto", sans-serif;
+}
+
+.close-modal {
+    font-family: "Fjalla One", sans-serif;
+    color: black;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.close-modal:hover {
+    text-decoration: underline;
+}
+
+.marker {
+    z-index: 10;
+}
+
+.marker img {
+    height: 20px;
+}
